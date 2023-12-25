@@ -1,7 +1,7 @@
 import { CardDefault } from '@/components/Card'
 import React from 'react'
 
-export default function () {
+export default function Index() {
   return (
     <div>
         <CardDefault />

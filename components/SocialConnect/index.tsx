@@ -1,7 +1,7 @@
 import React from 'react'
 import { Instagram, Linkedin, Mail, GitHub, Twitter } from 'react-feather'
 import { useEffect, useState } from 'react'
-export default function () {
+export default function Index() {
     const [windowWidth, setWindowWidth] = useState(0);
     const [hovered, setHovered] = useState(false);
     useEffect(() => {

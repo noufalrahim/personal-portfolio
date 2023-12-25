@@ -2,10 +2,9 @@ import { BlogCard } from '@/components/BlogCard'
 import { NavbarMenu } from '@/components/Navbar'
 import React from 'react'
 
-export default function () {
+export default function Index() {
   return (
     <>
-
       <main className='bg-black w-full h-full'>
         <NavbarMenu />
         <div>

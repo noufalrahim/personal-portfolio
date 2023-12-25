@@ -10,7 +10,7 @@ import {
 import { Instagram, Linkedin, Mail, MessageSquare, Phone, Slack, Twitter } from 'react-feather';
 import { Input } from "@material-tailwind/react";
 
-export default function () {
+export default function Index() {
   return (
     <div>
       <div className='text-white flex flex-col items-center justify-center mt-36'>

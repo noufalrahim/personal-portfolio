@@ -4,7 +4,7 @@ import React from 'react'
 import { Download, GitHub } from 'react-feather';
 import { TypeAnimation } from 'react-type-animation';
 
-export default function () {
+export default function Index() {
     return (
         <>
         <div className='text-white flex flex-col items-center justify-center mt-8'>

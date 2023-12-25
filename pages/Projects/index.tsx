@@ -3,7 +3,7 @@ import { NavbarMenu } from '@/components/Navbar'
 import { Typography } from '@material-tailwind/react'
 import React from 'react'
 
-export default function () {
+export default function Index() {
   return (
     <main className='bg-black w-full h-full'>
       <NavbarMenu />
@@ -51,25 +51,31 @@ export default function () {
             <Typography placeholder={undefined} className='text-xl text-white/80 text-center pb-5 px-10'>
               Featured Projects
             </Typography>
+            <div className='md:flex lg:flex xl:flex gap-8'>
             <CardDefault />
             <CardDefault />
             <CardDefault />
+            </div>
           </div>
           <div className='flex flex-col items-center justify-center w-full gap-8 lg:flex py-20'>
             <Typography placeholder={undefined} className='text-xl text-white/80 text-center pb-5 px-10'>
               Collaborations
             </Typography>
+            <div className='md:flex lg:flex xl:flex gap-8'>
             <CardDefault />
             <CardDefault />
             <CardDefault />
+            </div>
           </div>
           <div className='flex flex-col items-center justify-center w-full gap-8 lg:flex py-20'>
             <Typography placeholder={undefined} className='text-xl text-white/80 text-center pb-5 px-10'>
               Personal Projects
             </Typography>
+            <div className='md:flex lg:flex xl:flex gap-8'>
             <CardDefault />
             <CardDefault />
             <CardDefault />
+            </div>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { TinyCard } from '../TinyCard'
 
-export default function index() {
+export default function Index() {
     return (
         <div className='flex flex-col items-center justify-center w-full'>
             <h1 className='text-xl font-bold text-white text-center mt-36'>

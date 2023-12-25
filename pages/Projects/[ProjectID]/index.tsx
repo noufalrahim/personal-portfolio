@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Typography } from '@material-tailwind/react'
 import { NavbarMenu } from '@/components/Navbar'
 
-export default function () {
+export default function Index() {
     return (
         <>
         <main className='bg-black w-full h-full lg:flex'>
