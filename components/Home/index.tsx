@@ -1,14 +1,14 @@
-// import { Button } from '@material-tailwind/react';
-// import Image from 'next/image'
+import { Button } from '@material-tailwind/react';
+import Image from 'next/image'
 import React from 'react'
-// import { Download, GitHub } from 'react-feather';
-// import { TypeAnimation } from 'react-type-animation';
+import { Download, GitHub } from 'react-feather';
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Index() {
     return (
         <>
         <div className='text-white flex flex-col items-center justify-center mt-8'>
-            {/* <div>
+            <div>
                 <Image src='/image.jpg' width={217} height={217} alt={''} className='rounded-full contrast-125'/>
             </div>
             <div className='mt-8 align-center text-center'>
@@ -17,6 +17,9 @@ export default function Index() {
                     className='bg-gradient-to-b from-[#8F00FF] via-[#AE73DC] to-[#FFFFFF] bg-clip-text text-transparent'
                     >Hi! Noufal Rahim here..</span>👋
                 </h1>
+                {/* <h2 className='text-2xl font-bold mt-4'>
+                    I am a Web Developer
+                </h2> */}
                 <TypeAnimation
                      sequence={[
                         'I am a Full Stack Web Developer',
@@ -47,7 +50,7 @@ export default function Index() {
                         <GitHub width={17} height={17} />
                         </a>
                 </Button>
-            </div> */}
+            </div>
         </div>
         </>
     )

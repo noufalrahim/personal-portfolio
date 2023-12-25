@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <NavbarMenu />
       <main className="relative z-20 flex min-h-screen flex-col items-center justify-between py-24 px-20 overflow-y-auto mt-16 lg:mt-0 md:mt-0 xl:mt-0">
-        {/* <HomePage /> */}
+        <HomePage />
         <SocialConnect />
         <AboutMe />
         <ContactMe />
