@@ -1,9 +1,9 @@
-import { Typography } from "@material-tailwind/react";
+// import { Typography } from "@material-tailwind/react";
 
 export function Footer() {
     return (
         <footer className="flex mt-36 w-full flex-row flex-wrap justify-center gap-x-12 border-t border-blue-gray-50 pt-6 text-right md:justify-end">
-            <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
+            {/* <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
                 <li>
                     <Typography
                         placeholder={undefined}
@@ -14,7 +14,7 @@ export function Footer() {
                     >
                     © 2023 Noufal Rahim                    </Typography>
                 </li>
-            </ul>
+            </ul> */}
         </footer>
     );
 }
