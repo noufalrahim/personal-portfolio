@@ -26,11 +26,15 @@ export default function Index() {
                         1000,
                         'I am an App Developer',
                         1000,
+                        'I am a Foss Enthusiast',
+                        1000,
+                        'I am a Data Structures and Algorithms Enthusiast',
+                        1000,
                       ]}
                       wrapper="span"
                       speed={50}
                       style={{ fontSize: '2em', display: 'inline-block' }}
-                      repeat={Infinity}
+                      repeat={1}
                       className='text-2xl font-bold mt-4'
                 />
                 <p className='mt-4 text-md font-medium'>

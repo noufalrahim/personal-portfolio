@@ -12,7 +12,7 @@ export function Footer() {
                         color="blue-gray"
                         className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500 text-white"
                     >
-                    © 2023 Noufal Rahim                    </Typography>
+                    © 2024 Noufal Rahim </Typography>
                 </li>
             </ul>
         </footer>

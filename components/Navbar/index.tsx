@@ -3,7 +3,6 @@ import {
     Navbar,
     Collapse,
     Typography,
-    Button,
     IconButton,
     List,
     ListItem,
@@ -13,7 +12,7 @@ import {
     XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { useRouter } from "next/router";
-import { GitHub, Linkedin } from "react-feather";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function NavList() {
 
@@ -30,7 +29,7 @@ function NavList() {
                 placeholder={undefined}
             >
                 <ListItem className="flex items-center gap-2 py-2 pr-4 text-white"
-                onClick={() => router.push('/')}
+                    onClick={() => router.push('/')}
                     placeholder={undefined}
                 >Home</ListItem>
             </Typography>
@@ -90,8 +89,13 @@ export function NavbarMenu() {
                     <NavList />
                 </div>
                 <div className="hidden gap-8 lg:flex">
-                    <GitHub className="h-6 w-6" strokeWidth={2} fill="white" />
-                    <Linkedin className="h-6 w-6" strokeWidth={2} fill="white" />
+                    <FaGithub
+                        className='inline-block mr-2 cursor-pointer' size={30}
+                        onClick={() => window.open('https://github.com/noufalrahim')}
+                    />
+                    <FaLinkedin className='inline-block cursor-pointer ml-2' size={30}
+                        onClick={() => window.open('https://www.linkedin.com/in/noufalrahim/')}
+                    />
                 </div>
                 <IconButton
                     variant="text"

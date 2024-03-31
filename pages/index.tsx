@@ -4,6 +4,7 @@ import SocialConnect from '@/components/SocialConnect';
 import AboutMe from '@/components/AboutMe';
 import { Footer } from '@/components/Footer';
 import ContactMe from '@/components/ContactMe';
+import Technologies from '@/components/Technologies';
 export default function Home() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function Home() {
         <HomePage />
         <SocialConnect />
         <AboutMe />
+        <Technologies />
         <ContactMe />
         <Footer />
       </main>
