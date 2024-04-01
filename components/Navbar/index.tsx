@@ -12,32 +12,33 @@ import {
     XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 function NavList() {
 
     return (
         <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1" placeholder={undefined}>
      
-                <a className = '' href="/">
+                <Link className = '' href="/">
                 <ListItem className="flex items-center gap-2 py-2 pr-4 text-white"
                     placeholder={undefined}
                 >
                     Home
                 </ListItem>
-                </a>
+                </Link>
        
            
-                <a href='/Projects'>
+                <Link href='/Projects'>
                 <ListItem className="flex items-center gap-2 py-2 pr-4 text-white"
                     placeholder={undefined}
                 >My Projects</ListItem>
-                </a>
+                </Link>
             
-                <a href='/Blogs'>
+                <Link href='/Blogs'>
                 <ListItem className="flex items-center gap-2 py-2 pr-4 text-white"
                     placeholder={undefined}
                 >My Blogs</ListItem>
-                </a>
+                </Link>
         </List>
     );
 }
