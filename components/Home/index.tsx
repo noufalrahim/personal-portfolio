@@ -2,6 +2,7 @@ import { Button } from '@material-tailwind/react';
 import Image from 'next/image'
 import React from 'react'
 import { Download, GitHub } from 'react-feather';
+import { FaGithub } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 
 export default function Index() {
@@ -38,20 +39,20 @@ export default function Index() {
                       className='text-2xl font-bold mt-4'
                 />
                 <p className='mt-4 text-md font-medium'>
-                    I am a web developer with 2+ years of experience in building web applications. I am passionate about building scalable and maintainable web applications. <br/>I have experience in building web applications using React, NextJS, NodeJS, ExpressJS, MongoDB, and MySQL.
+                    I am a web and app developer with 2+ years of experience in building web applications. I am passionate about building scalable and maintainable web applications. <br/>I have experience in building web and mobile applications using React, React Native, Firebase, Angular JS, NextJS, NodeJS, ExpressJS, MongoDB, and MySQL.
                 </p>
             </div>
             <div className='flex mt-8 gap-4'>
-                <Button color='white' ripple={true} className='mt-8' placeholder={undefined}>
-                    <a href='https://drive.google.com/file/d/1x3Zs9r1z2zrZJ1r1nV2YVf7eU5JZ6qQ-/view?usp=sharing' target='_blank' rel='noreferrer' className='flex gap-2'>
+                <Button color='white' ripple={true} className='mt-8 justify-center items-center flex' placeholder={undefined}>
+                    <a href='https://drive.google.com/file/d/14vWZn2zbP7Jv-qp2V3hHjFvTXlWQfK9Q/view?usp=sharing' target='_blank' rel='noreferrer' className='flex gap-2'>
                         Download Resume
                         <Download width={17} height={17} />
                     </a>
                 </Button>
-                <Button color='white' ripple={true} className='mt-8 flex' placeholder={undefined}>
-                    <a href='#ContactMe' className='gap-2 flex'>
+                <Button color='white' ripple={true} className='mt-8 flex justify-center items-center' placeholder={undefined}>
+                    <a href='https://github.com/noufalrahim' className='gap-2 flex'>
                         Github
-                        <GitHub width={17} height={17} />
+                        <FaGithub size={15} />
                         </a>
                 </Button>
             </div>

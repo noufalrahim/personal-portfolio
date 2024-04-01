@@ -11,41 +11,6 @@ export default function Index() {
         <h1 className='text-4xl font-bold text-white text-center pt-48'>
           MY PROJECTS
         </h1>
-        {/* <div className='flex flex-col items-center justify-center w-full gap-8 py-20'>
-          <Typography placeholder={undefined} className='text-xl text-white/80 text-center pb-5 px-10'>
-            Featured Projects
-          </Typography>
-          <div className='md:flex items-center justify-center w-full gap-8 lg:flex'>
-            <CardDefault />
-            <CardDefault />
-            <CardDefault />
-          </div>
-        </div>
-        <div className='flex flex-col items-center justify-center w-full gap-8 lg:flex py-20'>
-          <Typography placeholder={undefined} className='text-xl text-white/80 text-center pb-5 px-10'>
-            Collaborations
-          </Typography>
-          <div className='md:flex items-center justify-center w-full gap-8 lg:flex'>
-            <CardDefault />
-            <CardDefault />
-            <CardDefault />
-          </div>
-        </div>
-        <div className='flex flex-col items-center justify-center w-full gap-8 lg:flex py-20'>
-          <Typography placeholder={undefined} className='text-xl text-white/80 text-center pb-5 px-10'>
-            Personal Projects
-          </Typography>
-          <div className='md:flex items-center justify-center w-full gap-8 lg:flex'>
-            <CardDefault />
-            <CardDefault />
-            <CardDefault />
-          </div>
-          <div className='md:flex items-center justify-center w-full gap-8 lg:flex'>
-            <CardDefault />
-            <CardDefault />
-            <CardDefault />
-          </div>
-        </div> */}
         <div>
           <div className='flex flex-col items-center justify-center w-full gap-8 lg:flex py-20'>
             <Typography placeholder={undefined} className='text-xl text-white/80 text-center pb-5 px-10'>
