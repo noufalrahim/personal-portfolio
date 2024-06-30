@@ -5,11 +5,20 @@ import { FaGithub } from "react-icons/fa"
 export default function Hero() {
     return (
         <div className="flex items-center justify-center flex-col w-full">
-            <img src="/image.jpg" alt="logo" className="w-48 h-48 rounded-full border-2 border-white" />
+            <div className="">
+                <img width={250} height={250} src="/image.jpg" alt="logo" className="rounded-full border-2 border-white" />
+            </div>
             <h1 className="text-white text-3xl font-bold mt-4 text-center">
                 <code>Hi! Noufal Rahim here..👋</code>
             </h1>
-            <div className="mx-5">
+            <div
+            style={{
+                width: "80%",
+                marginTop: "10px",
+                padding: "10px",
+                marginBottom: "10px",
+            }} 
+            className="mx-5">
                 <p className="text-white text-md text-center mt-4">
                     <code>
                         I am a web and app developer with 2+ years of experience in building web applications. I am passionate about building scalable and maintainable web applications.

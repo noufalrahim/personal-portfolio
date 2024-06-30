@@ -1,11 +1,11 @@
-import BackgroundImg from "@/src/components/BackgroundImg";
-import Connect from "@/src/components/Connect";
-import ContactMe from "@/src/components/ContactMe";
-import Footer from "@/src/components/Footer";
-import Frameworks from "@/src/components/Frameworks";
-import Hero from "@/src/components/Hero";
-import Navbar from "@/src/components/Navbar";
-import Skills from "@/src/components/Skills";
+import BackgroundImg from "@/components/BackgroundImg";
+import Connect from "@/components/Connect";
+import ContactMe from "@/components/ContactMe";
+import Footer from "@/components/Footer";
+import Frameworks from "@/components/Frameworks";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import Skills from "@/components/Skills";
 import React from "react";
 
 export default function Home() {
