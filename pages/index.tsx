@@ -13,7 +13,7 @@ export default function Home() {
 
   const [darkMode, setDarkMode] = React.useState(false);
 
-  return (
+  return (  
     <main className="dark:bg-black bg-white min-h-screen">
       {
         darkMode && (

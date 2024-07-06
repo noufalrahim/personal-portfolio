@@ -116,15 +116,15 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
             </div>
             {isOpen && (
                 <div className="md:hidden flex flex-col items-center space-y-5 py-5">
-                    <div className="py-1">
+                    <Link className="text-md" href="/">
+                        <code>Home</code>
+                    </Link>
+                    <Link className="text-md" href="/Projects">
                         <code>Projects</code>
-                    </div>
-                    <div className="py-1">
+                    </Link>
+                    <Link className="text-md" href="/Blogs">
                         <code>Blogs</code>
-                    </div>
-                    <div className="py-1">
-                        <code>Contact</code>
-                    </div>
+                    </Link>
                     <div className="flex space-x-4 gap-4 my-5">
                         <Link href="https://www.linkedin.com/in/noufalrahim" target="_blank">
                             <FaLinkedin className="text-2xl" />
