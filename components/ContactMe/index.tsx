@@ -10,23 +10,20 @@ export default function ContactMe() {
     const formik = useFormik({
         initialValues: {
             name: '',
-            email: '',
             message: ''
         },
         validationSchema: Yup.object({
             name: Yup.string().required('Name is required'),
-            email: Yup.string().email('Invalid email address').required('Email is required'),
             message: Yup.string().required('Message is required')
         }),
         onSubmit: values => {
             console.log(values);
             const recipientEmail = 'noufalrahim6784@gmail.com';
             const subject = 'Request for contact';
-            const senderEmail = values.email;
             const body = values.message;
 
             // Constructing the mailto URL with encodeURIComponent for safe URL encoding
-            const mailtoUrl = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}&cc=${senderEmail}`;
+            const mailtoUrl = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
             // Use router.push to open the mailto link in the same window
             router.push(mailtoUrl);
@@ -68,22 +65,6 @@ export default function ContactMe() {
                             />
                             {formik.touched.name && formik.errors.name ? (
                                 <p className="text-red-500 text-sm italic">{formik.errors.name}</p>
-                            ) : null}
-                        </div>
-                        <div className="w-full mt-4">
-                            <Input
-                                crossOrigin={'true'}
-                                type="email"
-                                name="email"
-                                placeholder="Email"
-                                className="w-full p-2 focus:outline-none bg-transparent border-b dark:text-white text-black dark:border-white border-black"
-                                value={formik.values.email}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                error={formik.touched.email && formik.errors.email ? true : false}
-                            />
-                            {formik.touched.email && formik.errors.email ? (
-                                <p className="text-red-500 text-sm italic">{formik.errors.email}</p>
                             ) : null}
                         </div>
                         <div className="w-full mt-4">
