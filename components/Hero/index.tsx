@@ -1,9 +1,10 @@
 import React from "react"
 import { IoMdDownload } from "react-icons/io"
-import { FaGithub } from "react-icons/fa"
 import { aboutMe } from "@/DB/db"
+import { useRouter } from "next/router"
 
 export default function Hero() {
+    const router = useRouter();
     return (
         <div className="flex items-center justify-center flex-col w-full">
             <div className="">
@@ -26,14 +27,12 @@ export default function Hero() {
                     </code>
                 </p>
             </div>
-            <div className="w-full justify-center items-center flex gap-4 my-5">
+            <div className="w-full justify-center items-center flex gap-4 my-5"
+                onClick={() => router.push("/docs/Resume.pdf")}
+            >
                 <button className="dark:bg-white bg-black text-white dark:text-black px-2 py-1 rounded-sm text-sm items-center justify-center flex">
                     Download Resume
                     <IoMdDownload className="inline-block ml-1" />
-                </button>
-                <button className="dark:bg-white bg-black text-white dark:text-black  px-2 py-1 rounded-sm text-sm items-center justify-center flex">
-                    Github
-                    <FaGithub className="inline-block ml-1" />
                 </button>
             </div>
         </div>

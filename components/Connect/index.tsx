@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaGithub, FaInstagram, FaLinkedin, FaMailBulk, FaWhatsapp } from "react-icons/fa";
 export default function Connect() {
 
@@ -5,27 +6,27 @@ export default function Connect() {
         {
             name: "Email",
             icon: <FaMailBulk className="dark:text-white text-black text-4xl" size={48} />,
-            link: "mailto:"
+            link: "mailto:noufalrahim6784@gmail.com"
         },
         {
             name: "Github",
             icon: <FaGithub className="dark:text-white text-black text-4xl" size={48} />,
-            link: ""
+            link: "https://github.com/noufalrahim"
         },
         {
             name: "Instagram",
             icon: <FaInstagram className="dark:text-white text-black text-4xl" size={48} />,
-            link: ""
+            link: "https://www.instagram.com/noufal__rahim/"
         },
         {
             name: "Linkedin",
             icon: <FaLinkedin className="dark:text-white text-black text-4xl" size={48} />,
-            link: ""
+            link: "https://www.linkedin.com/in/noufalrahim"
         },
         {
             name: "Whatsapp",
             icon: <FaWhatsapp className="dark:text-white text-black text-4xl" size={48} />,
-            link: ""
+            link: "https://wa.me/919778025976"
         },
     ];
 
@@ -37,11 +38,11 @@ export default function Connect() {
             <div className="w-full flex justify-around items-center flex-row">
                 {
                     connect.map((item, index) => (
-                        <a key={index} href={item.link}
+                        <Link key={index} href={item.link} target="_blank"
                             className="dark:text-white text-black text-4xl m-4"
                         >
                             {item.icon}
-                        </a>
+                        </Link>
                     ))
                 }
             </div>

@@ -85,8 +85,12 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
                     <button onClick={toggleDarkMode}>
                         {darkMode ? <FaMoon color="white" size={24} /> : <FaSun color={'#E69B05'} size={24} />}
                     </button>
-                    <FaLinkedin className="text-2xl" />
-                    <FaGithub className="text-2xl" />
+                    <Link href="https://www.linkedin.com/in/noufalrahim" target="_blank">
+                        <FaLinkedin className="text-2xl" />
+                    </Link>
+                    <Link href="https://github.com/noufalrahim" target="_blank">
+                        <FaGithub className="text-2xl" />
+                    </Link>
                 </div>
                 {
                     isMobile ? (
@@ -122,8 +126,12 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
                         <code>Contact</code>
                     </div>
                     <div className="flex space-x-4 gap-4 my-5">
-                        <FaLinkedin className="text-2xl" />
-                        <FaGithub className="text-2xl" />
+                        <Link href="https://www.linkedin.com/in/noufalrahim" target="_blank">
+                            <FaLinkedin className="text-2xl" />
+                        </Link>
+                        <Link href="https://github.com/noufalrahim" target="_blank">
+                            <FaGithub className="text-2xl" />
+                        </Link>
                     </div>
                 </div>
             )}
