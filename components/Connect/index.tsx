@@ -5,27 +5,27 @@ export default function Connect() {
     const connect = [
         {
             name: "Email",
-            icon: <FaMailBulk className="dark:text-white text-black text-4xl" size={48} />,
+            icon: <FaMailBulk className="dark:text-white text-black text-4xl" size={40} />,
             link: "mailto:noufalrahim6784@gmail.com"
         },
         {
             name: "Github",
-            icon: <FaGithub className="dark:text-white text-black text-4xl" size={48} />,
+            icon: <FaGithub className="dark:text-white text-black text-4xl" size={40} />,
             link: "https://github.com/noufalrahim"
         },
         {
             name: "Instagram",
-            icon: <FaInstagram className="dark:text-white text-black text-4xl" size={48} />,
+            icon: <FaInstagram className="dark:text-white text-black text-4xl" size={40} />,
             link: "https://www.instagram.com/noufal__rahim/"
         },
         {
             name: "Linkedin",
-            icon: <FaLinkedin className="dark:text-white text-black text-4xl" size={48} />,
+            icon: <FaLinkedin className="dark:text-white text-black text-4xl" size={40} />,
             link: "https://www.linkedin.com/in/noufalrahim"
         },
         {
             name: "Whatsapp",
-            icon: <FaWhatsapp className="dark:text-white text-black text-4xl" size={48} />,
+            icon: <FaWhatsapp className="dark:text-white text-black text-4xl" size={40} />,
             link: "https://wa.me/919778025976"
         },
     ];

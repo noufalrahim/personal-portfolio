@@ -8,23 +8,23 @@ export default function Frameworks() {
     const frameworks = [
         {
             name: "React",
-            icon: <FaReact className="dark:text-white text-black" size={48} />,
+            icon: <FaReact className="dark:text-white text-black" size={40} />,
         },
         {
             name: "Next.js",
-            icon: <SiNextdotjs className="dark:text-white text-black" size={48} />,
+            icon: <SiNextdotjs className="dark:text-white text-black" size={40} />,
         },
         {
             name: "Node.js",
-            icon: <FaNodeJs className="dark:text-white text-black" size={48} />,
+            icon: <FaNodeJs className="dark:text-white text-black" size={40} />,
         },
         {
             name: "Database",
-            icon: <FaDatabase className="dark:text-white text-black" size={48} />,
+            icon: <FaDatabase className="dark:text-white text-black" size={40} />,
         },
         {
             name: "Electron",
-            icon: <IoLogoElectron className="dark:text-white text-black" size={48} />,
+            icon: <IoLogoElectron className="dark:text-white text-black" size={40} />,
         }
     ]
 
