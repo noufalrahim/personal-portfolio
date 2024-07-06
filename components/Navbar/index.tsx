@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
 import { FaMoon, FaSun } from "react-icons/fa6";
@@ -70,15 +71,15 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
                     <code>Noufal Rahim</code>
                 </div>
                 <div className="hidden md:flex gap-4 cursor-pointer">
-                    <div className="text-md">
+                    <Link className="text-md" href="/">
+                        <code>Home</code>
+                    </Link>
+                    <Link className="text-md" href="/Projects">
                         <code>Projects</code>
-                    </div>
-                    <div className="text-md">
+                    </Link>
+                    <Link className="text-md" href="/Blogs">
                         <code>Blogs</code>
-                    </div>
-                    <div className="text-md">
-                        <code>Contact</code>
-                    </div>
+                    </Link>
                 </div>
                 <div className="hidden md:flex gap-4 space-x-4 cursor-pointer">
                     <button onClick={toggleDarkMode}>
