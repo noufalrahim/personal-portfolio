@@ -1,6 +1,7 @@
 import React from "react"
 import { IoMdDownload } from "react-icons/io"
 import { FaGithub } from "react-icons/fa"
+import { aboutMe } from "@/DB/db"
 
 export default function Hero() {
     return (
@@ -12,17 +13,16 @@ export default function Hero() {
                 <code>Hi! Noufal Rahim here..👋</code>
             </h1>
             <div
-            style={{
-                width: "80%",
-                marginTop: "10px",
-                padding: "10px",
-                marginBottom: "10px",
-            }} 
-            className="mx-5">
+                style={{
+                    width: "80%",
+                    marginTop: "10px",
+                    padding: "10px",
+                    marginBottom: "10px",
+                }}
+                className="mx-5">
                 <p className="dark:text-white text-black text-md text-center mt-4">
                     <code>
-                        I am a web and app developer with 2+ years of experience in building web applications. I am passionate about building scalable and maintainable web applications.
-                        I have experience in building web and mobile applications using React, React Native, Firebase, NextJS, NodeJS, ExpressJS, MongoDB, MySQL and goes on...
+                        {aboutMe}
                     </code>
                 </p>
             </div>

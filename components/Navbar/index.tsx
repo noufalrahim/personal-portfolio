@@ -91,9 +91,19 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
                     isMobile ? (
                         <div className="md:hidden">
                             {isOpen ? (
-                                <FaTimes onClick={toggleMenu} className="text-2xl" />
+                                <div className="flex flex-row gap-4">
+                                    <button onClick={toggleDarkMode}>
+                                        {darkMode ? <FaMoon color="white" size={24} /> : <FaSun color={'#E69B05'} size={24} />}
+                                    </button>
+                                    <FaTimes onClick={toggleMenu} className="text-2xl" />
+                                </div>
                             ) : (
-                                <FaBars onClick={toggleMenu} className="text-2xl" />
+                                <div className="flex flex-row gap-4">
+                                    <button onClick={toggleDarkMode}>
+                                        {darkMode ? <FaMoon color="white" size={24} /> : <FaSun color={'#E69B05'} size={24} />}
+                                    </button>
+                                    <FaBars onClick={toggleMenu} className="text-2xl" />
+                                </div>
                             )}
                         </div>
                     ) : null
@@ -111,9 +121,6 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
                         <code>Contact</code>
                     </div>
                     <div className="flex space-x-4 gap-4 my-5">
-                        <button onClick={toggleDarkMode}>
-                            {!darkMode ? <FaMoon color="white" size={24} /> : <FaSun color={'#E69B05'} size={24} />}
-                        </button>
                         <FaLinkedin className="text-2xl" />
                         <FaGithub className="text-2xl" />
                     </div>

@@ -1,5 +1,4 @@
 import BackgroundImg from "@/components/BackgroundImg";
-import Card from "@/components/Card";
 import Connect from "@/components/Connect";
 import ContactMe from "@/components/ContactMe";
 import Footer from "@/components/Footer";
@@ -9,7 +8,6 @@ import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
 import React from "react";
 import Projects from "@/components/Projects";
-import Blogs from "@/components/Blogs";
 
 export default function Home() {
 
@@ -28,8 +26,7 @@ export default function Home() {
           setDarkMode={(value) => setDarkMode(value)}
         />
         <Hero />
-        {/* <Projects />
-        <Blogs /> */}
+        <Projects />
         <Skills />
         <Frameworks />
         <Connect />
