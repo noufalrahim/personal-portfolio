@@ -214,7 +214,7 @@ export const projects: ProjectProps[] = [
         image: '/projects/zinvos.avif',
         title: 'Zinvos Admin Panel',
         description: 'Zinvos is moile application that hepls you to organise and manage your events. It provides a user-friendly interface to manage your events. It also provides a feature to view your event analytics.',
-        techStack: ['React JS', 'Tailwind CSS', 'Vite JS', 'ShadCN', 'Fluttr'],
+        techStack: ['React JS', 'Tailwind CSS', 'Vite JS', 'ShadCN', 'Flutter'],
         github: {
             show: false,
             link: '',
